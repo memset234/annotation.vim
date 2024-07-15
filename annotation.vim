@@ -1,3 +1,4 @@
+" The version number of this code is 1.1
 " Do not modify lines 2 to 47!
 func CplusplusCommentOnOneLine(nu)
     if getline(a:nu)[0] == '/' && getline(a:nu)[1] == '/'
@@ -14,6 +15,7 @@ func CplusplusCommentOnOneLine(nu)
         let f = f . "/"
         if getline(a:nu)[1] != ' '
             let k = k . "l"
+            let f = f . "/"
         else
             let f = f . "\<ESC>r/a"
         endif
