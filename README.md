@@ -1,4 +1,4 @@
-![](https://cdn.luogu.com.cn/upload/image_hosting/mwf7r0zl.png)
+![](https://cdn.luogu.com.cn/upload/image_hosting/qgclyez5.png)
 
 This is a plugin implemented in **Vimscript** language that can run in Vim.
 
