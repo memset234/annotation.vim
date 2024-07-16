@@ -28,3 +28,7 @@ The plugin may not be suitable for your configuration. You can modify your short
 - In select mode annotation in two or more line: "\`\/".
 
 You can change these configurations to make it more convenient for you to use Vim.
+
+## Update
+
+- `1.2`, Fixed the issue where multi line comments cannot be commented after a blank line. Now multi line comments are not affected by blank lines and blank lines will **not be commented**.
