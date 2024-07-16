@@ -10,7 +10,7 @@ At present, C, C++ and pascal is supported, and one click comments for languages
 
 The current version number is 1.1.
 
-If there is a problem, please contact me, or submit an issue or a pull requiest.
+If there is a problem, please contact me, or submit an issue, sure you also can fork it, then submit a pull request.
 
 I dislike neovim,so this is a vim plugin.
 
