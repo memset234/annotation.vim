@@ -8,7 +8,7 @@ This plugin enables one click annotation of **C++** code in normal mode, inserti
 
 At present, C, C++ and pascal is supported, and one click comments for languages such as Python, Java, and Go will be updated in the future.
 
-The current version number is 1.1.
+The current version number is 1.2.
 
 If there is a problem, please contact me, or submit an issue, sure you also can fork it, then submit a pull request.
 
