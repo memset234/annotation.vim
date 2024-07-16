@@ -1,4 +1,4 @@
-" The version number of this code is 1.1
+" The version number of this code is 1.2
 " Do not modify lines 2 to 47!
 func CplusplusCommentOnOneLine(nu)
     if getline(a:nu)[0] == '/' && getline(a:nu)[1] == '/'
@@ -11,14 +11,8 @@ func CplusplusCommentOnOneLine(nu)
     let k = ""
     let f = ""
     if getline(a:nu)[0] != ' '
-        let k = k . "l"
-        let f = f . "/"
-        if getline(a:nu)[1] != ' '
-            let k = k . "l"
-            let f = f . "/"
-        else
-            let f = f . "\<ESC>r/a"
-        endif
+        let k = k . "ll"
+        let f = f . "//"
     else
         let f = f . "\<ESC>r/lr/a"
     endif
@@ -35,7 +29,11 @@ func CplusplusCommentOnMoreLine(lt,rt)
     let i = L
     let now = "\<ESC>" . L . "Ga"
     while i <= R
-        let now = now . CplusplusCommentOnOneLine(i) . "\<ESC>ja"
+        if getline(i) == ""
+            let now = now . "\<ESC>ja"
+        else
+            let now = now . CplusplusCommentOnOneLine(i) . "\<ESC>ja"
+        endif
         let i = i + 1
     endwhile
     return now
